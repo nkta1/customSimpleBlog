@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block title %} Публикации {% endblock %}
 {% block content %}
+<h1 class="text-center">Новости</h1>
 <div class="row">
 {% if posts %}
     {% for post in posts %}
     <div class="col-md-4 blog_post">
-        <div class="card" style="width: 18rem;">
+        <div class="card text-white bg-info" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">{{ post.name }}</h5>
             <p class="card-text">{{ post.content }}</p>
